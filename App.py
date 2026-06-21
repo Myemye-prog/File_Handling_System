@@ -1,6 +1,6 @@
 """
-FileVault — a vibrant glassmorphic console for file CRUD operations.
-Run with:  streamlit run filevault_app_vibrant.py
+File Flex — a vibrant glassmorphic console for file CRUD operations.
+Run with:  streamlit run file_flex_app.py
 """
 
 import streamlit as st
@@ -14,7 +14,7 @@ VAULT_DIR = Path("vault_files")
 VAULT_DIR.mkdir(exist_ok=True)
 
 st.set_page_config(
-    page_title="FileVault — file ops console",
+    page_title="File Flex — file ops console",
     page_icon="✨",
     layout="wide",
     initial_sidebar_state="expanded",
@@ -270,7 +270,7 @@ div[data-testid="stSidebar"] .stButton button:hover{
 # ----------------------------------------------------------------------------
 with st.sidebar:
     st.markdown(
-        "<div class='hero-title' style='font-size:1.5rem;'>✨ FileVault</div>"
+        "<div class='hero-title' style='font-size:1.5rem;'>✨ File Flex</div>"
         "<div class='hero-sub'>your file-ops control deck</div>",
         unsafe_allow_html=True,
     )
@@ -303,7 +303,7 @@ with st.sidebar:
 st.markdown(
     """
 <div class="glass">
-  <div class="hero-title">FileVault</div>
+  <div class="hero-title">File Flex</div>
   <div class="hero-sub">Create, read, update and delete files through one clean, glowing dashboard.</div>
   <div class="badge-row">
     <span class="pill">⚡ instant ops</span>
