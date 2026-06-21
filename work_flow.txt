@@ -1,0 +1,70 @@
+# File Management System - Workflow
+
+This project is a menu-driven File Management System built using Python and the `pathlib` module.
+
+## Workflow
+
+1. **Start the Program**
+
+   * The user runs the Python script.
+   * A menu is displayed with four options:
+
+     * Create a File
+     * Read a File
+     * Update a File
+     * Delete a File
+
+2. **Create a File**
+
+   * User enters a file name.
+   * The program checks whether the file already exists.
+   * If the file does not exist:
+
+     * A new file is created.
+     * User enters content to store in the file.
+   * If the file exists:
+
+     * An appropriate message is displayed.
+
+3. **Read a File**
+
+   * User enters the file name.
+   * The program checks whether the file exists.
+   * If found:
+
+     * The file content is displayed.
+   * Otherwise:
+
+     * A "File not found" message is shown.
+
+4. **Update a File**
+
+   * User enters the file name.
+   * If the file exists, the user can choose:
+
+     * Rename the file
+     * Append new content to the file
+     * Overwrite existing content
+   * The selected operation is performed successfully.
+
+5. **Delete a File**
+
+   * User enters the file name.
+   * If the file exists:
+
+     * The file is permanently deleted.
+   * Otherwise:
+
+     * A message indicates that the file does not exist.
+
+6. **Error Handling**
+
+   * All operations are wrapped in try-except blocks.
+   * Any unexpected errors are caught and displayed without crashing the program.
+
+## Technologies Used
+
+* Python
+* pathlib module
+* File Handling (Create, Read, Update, Delete)
+* Exception Handling
